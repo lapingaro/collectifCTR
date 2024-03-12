@@ -124,6 +124,7 @@
     <!-- Navbar & Hero End -->
 
 
+   
     <!-- Booking Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -132,11 +133,11 @@
                     
                     <div class="col-md-6">
                         <h1 class="text-white mb-4">Adhesion</h1>
-                        <form>
+                        <form name="registration"  method="POST" data-netlify="true">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Nom">
+                                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Nom">
                                         <label for="name">Nom</label>
                                     </div>
                                   
@@ -144,69 +145,66 @@
 
                                   <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Nom">
+                                        <input type="text" class="form-control bg-transparent" id="Prénom" name="Prénom" placeholder="Prénom">
                                         <label for="name">Prénom</label>
                                     </div>
                                   
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email">
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" name="Dob" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
                                         <label for="datetime">Date de Naissance</label>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+
+                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select bg-transparent" id="select1">
-                                            <option value="1">Libreville</option>
-                                            <option value="2">Lieu 2</option>
-                                            <option value="3">Lieu 3</option>
-                                        </select>
-                                        <label for="select1">Lieu De Naissance</label>
+                                        <input type="text" class="form-control bg-transparent" id="Lieu De Naissance" name="Lieu De Naissance" placeholder="Ville de Résidence">
+                                        <label for="name">Lieu De Naissance</label>
                                     </div>
+                                  
                                 </div>
+                             
                                      <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="number" class="form-control bg-transparent" id="num" placeholder="Nom">
+                                        <input type="number" class="form-control bg-transparent" id="num" placeholder="Nom" name="Numero de Telephone">
                                         <label for="name">Numéro de Téléphone</label>
                                     </div>
                                   
                                 </div>
-                                   <div class="col-md-6">
+
+                                    <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select bg-transparent" id="select1">
-                                            <option value="1">Johannesburg</option>
-                                            <option value="2">Lieu 2</option>
-                                            <option value="3">Lieu 3</option>
-                                        </select>
-                                        <label for="select1">Ville de Résidence</label>
+                                        <input type="text" class="form-control bg-transparent" id="Résidence" name="Résidence" placeholder="Ville de Résidence">
+                                        <label for="name">Ville de Résidence</label>
                                     </div>
+                                  
                                 </div>
                                 
                                 
                                     <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Nom">
+                                        <input type="text" class="form-control bg-transparent" id="NumYears" placeholder="Numbre d'Annees" name="Numbre d'Annees">
                                         <label for="name"> Nombre d'Année En Afrique du Sud</label>
                                     </div>
                                   
                                 </div>
                                    <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Nom">
+                                        <input type="text" class="form-control bg-transparent" id="profession" placeholder="profession" name="profession">
                                         <label for="name">Profession</label>
                                     </div>
                                   
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px" name="contribution"></textarea>
                                         <label for="message">Contribution</label>
                                     </div>
                                 </div>
@@ -221,6 +219,8 @@
         </div>
     </div>
     <!-- Booking Start -->
+    
+
  <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
